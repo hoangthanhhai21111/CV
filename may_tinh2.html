@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        table{ 
+            margin-left:450px ;
+            background-color: rgb(243, 10, 185);
+            width: 200px;
+            
+        
+        }
+        button{ width: 50px;
+            
+        }
+    </style>
+    <table border="1">
+        <tr><th colspan="4">máy tính siêu cấp</th></tr>
+        <tr>
+            <td colspan="4" >
+                <input type="nu" id="so" value="">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="so_1" onclick="xu_ly_so_1()">1</button>
+            </td>
+            <td>
+                <button type="button" id="so_2" onclick="xu_ly_so_2()">2</button>
+            </td>
+            <td>
+                <button type="button" id="so_3" onclick="xu_ly_so_3()">3</button>
+            </td>
+            <td>
+                <button type="button" id="cong" onclick="xu_ly_cong()">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="so_4" onclick="xu_ly_so_4()">4</button>
+            </td>
+            <td>
+                <button type="button" id="so_5" onclick="xu_ly_so_5()">5</button>
+            </td>
+            <td>
+                <button type="button" id="so_6" onclick="xu_ly_so_6()">6</button>
+            </td>
+            <td>
+                <button type="button" id="so_-"onclick="xu_ly_tru()">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="so_7"onclick="xu_ly_so_7()">7</button>
+            </td>
+            <td>
+                <button type="button" id="so_8"onclick="xu_ly_so_8()">8</button>
+            </td>
+            <td>
+                <button type="button" id="so_9"onclick="xu_ly_so_9()">9</button>
+            </td>
+            <td>
+                <button type="button" id="so_nhan" onclick="xu_ly_nhan()">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="so_c"onclick="xu_ly_xoa()">c</button>
+            </td>
+            <td>
+                <button type="button" id="so_0"onclick="xu_ly_so_0()">0</button>
+            </td>
+            <td>
+                <button type="button" id="bang" onclick="xu_ly_bang()">=</button>
+            </td>
+            <td><button type="button" id="so_/"onclick="xu_ly_chia()">/</button>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    function xu_ly_so_1() {
+        var so = document.getElementById("so").value;//"gia tri rong value"
+        document.getElementById("so").value = so + 1;//1
+    }
+    function xu_ly_so_2() {
+        var so = document.getElementById("so").value;//1
+        document.getElementById("so").value = so + 2;//12
+    }
+    function xu_ly_so_3() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 3;
+    }
+    function xu_ly_cong() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "+";
+    }
+    function xu_ly_tru() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "-";
+    }
+    function xu_ly_nhan() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "*";
+    }    function xu_ly_chia() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "/";
+    }
+    function xu_ly_so_4() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 4;
+    }
+    function xu_ly_so_5() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 5;
+    }
+    function xu_ly_bang() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = eval(so);
+    }
+    function xu_ly_nhan() {
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + "*";
+    }function xu_ly_so_6(){
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 6;
+    } function xu_ly_so_7(){
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 7;
+    }function xu_ly_so_8(){
+        var so = document.getElementById("so").value;
+        document.getElementById("so").value = so + 8;
+    }function xu_ly_so_9(){
+        var so=document.getElementById("so").value;
+        document.getElementById("so").value= so+9;
+    }function xu_ly_so_0(){
+        var so=document.getElementById("so").value;
+        document.getElementById("so").value=so+0;}
+    // }function xu_ly_xoa(){
+    //     var so = document.getElementById("so").value;
+    //     kq =so.substr(0,so.length-1);
+    //     document.getElementById("so").value=kq;
+    // } xóa từng số một
+    function xu_ly_xoa(){
+        var so=document.getElementById("so").value;
+        document.getElementById("so").value="";
+    }
+   
+     </script>
+</html>
